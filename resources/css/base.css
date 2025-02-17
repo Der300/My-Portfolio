@@ -1,9 +1,10 @@
 /* variable css */
 :root {
-    --main-color: #fff;
-    --light-color: #fff;
-    --dark-color: #000;
+    --main-color: #013b18;
+    --light-color: #03ba03;
     --text-color: #fafafa;
+    --black-color: #000;
+    --white-color: #fff;
 }
 
 /* all html */
@@ -19,18 +20,14 @@ html {
     box-sizing: border-box;
 }
 
-/* base responsive */
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+/*-----start key frames-----*/
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.grid__full-width {
-    width: 100%;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-}
+/*-----end key frames-----*/

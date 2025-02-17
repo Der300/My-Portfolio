@@ -1,0 +1,40 @@
+/*-----start base responsive-----*/
+@media screen and (max-width: 768px) {
+    .h-navbar-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 10rem;
+        height: 100vh;
+        background: linear-gradient(-45deg, var(--light-color), var(--main-color));
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .h-navbar-item {
+        height: 5rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #h-nav-caption {
+        display: block;
+    }
+
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*-----end base responsive-----*/

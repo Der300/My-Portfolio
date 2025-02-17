@@ -1,0 +1,110 @@
+/*------start header navbar ------*/
+.header {
+    height: 5rem;
+    background: linear-gradient(-45deg, var(--light-color), var(--main-color));
+    position: fixed;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.h-navbar {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-navbar-list {
+    height: inherit;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    align-items: flex-end;
+    margin:0;
+    padding: 0;
+}
+
+.h-navbar-item {
+    height: 100%;
+    display: flex;
+    padding: 4px 24px;
+    position: relative;
+    align-items: center;
+}
+
+.h-navbar-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.h-navbar-icon {  
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    padding: 5px;
+    background-color: var(--light-color);
+    color: var(--black-color);
+    border: solid 3px var(--white-color);
+    border-radius: 50%;
+}
+
+#h-nav-caption {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    width: 100%;
+    color: var(--text-color);
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+.h-navbar-list.show-h-navbar-list {
+    animation: FadeIn 0.5s ease;
+    transition: 0.5s ease;
+    transform: translateX(0);
+}
+
+
+/* add hover for item */
+.h-navbar-item:hover {
+    background-color: var(--light-color);
+}
+
+.h-navbar-item:hover .h-navbar-icon {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-color: var(--black-color);
+}
+
+
+/* add active class */
+.h-navbar-item.active {
+    align-items: flex-end;
+}
+
+.h-navbar-item.active .h-navbar-icon {
+    display: block;
+    animation: FadeIn 0.5s ease, MoveIcon 0.5s ease;
+    top: -16%;
+}
+
+@keyframes MoveIcon {
+    from {
+        top: -10%;
+        align-items: center;
+    }
+    to {
+        top: -16%;
+        align-items: flex-end;
+    }
+}
+
+
+/*------end header navbar ------*/
+
+.container {
+    height: 1200px;
+}
