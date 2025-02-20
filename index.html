@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="My Portfolio" content="" />
+    <meta name="My Portfolio" content="A portfolio showcasing my work, skills, and experience." />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- reset css with normalize libraries  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -21,27 +23,27 @@
             <nav class="h-navbar">
                 <ul class="h-navbar-list">
                     <li class="h-navbar-item active">
-                        <a href="#" class="h-navbar-link">
-                            HOME
-                            <i class="h-navbar-icon fa fa-home" aria-hidden="true"></i>
+                        <a href="#home" aria-label="Home" class="h-navbar-link">
+                            home
+                            <i class="h-navbar-icon fas fa-home" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li class="h-navbar-item">
-                        <a href="#" class="h-navbar-link">
-                            ABOUT
-                            <i class="h-navbar-icon fa fa-user" aria-hidden="true"></i>
+                        <a href="#about" class="h-navbar-link">
+                            about
+                            <i class="h-navbar-icon fas fa-user" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li class="h-navbar-item">
-                        <a href="#" class="h-navbar-link">
-                            WORK
-                            <i class="h-navbar-icon fa-solid fa-grip" aria-hidden="true"></i>
+                        <a href="#portfolio" class="h-navbar-link">
+                            portfolio
+                            <i class="h-navbar-icon fas fa-grip" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li class="h-navbar-item">
-                        <a href="#" class="h-navbar-link">
-                            CONTACT
-                            <i class="h-navbar-icon fa-solid fa-envelope" aria-hidden="true"></i>
+                        <a href="#contact" class="h-navbar-link">
+                            contact
+                            <i class="h-navbar-icon fas fa-envelope" aria-hidden="true"></i>
                         </a>
                     </li>
                     <!-- <li class="h-navbar-item">
@@ -51,11 +53,182 @@
                         </button>
                     </li> -->
                 </ul>
-            <p id="h-nav-caption">home</p>
+                <p id="h-nav-caption">home</p>
+                <div class="h-image"></div>
             </nav>
         </header>
-        <div class="container">
-            
+        <div class="grid_container">
+            <div class="grid__row" id="home">
+                <div class="grid__col-4 h-avatar">
+                    <img src="resources/images/avatar_CV.jpg" alt="Avatar">
+                </div>
+                <div class="grid__col-8 h-info">
+                    <h1 class="h-info-name">TRAN VAN VU LUAN</h1>
+                    <p class="h-info-position">Web design</p>
+                </div>
+            </div>
+            <div class="grid__row" id="about">
+                <div class="grid__col-4 a-content">
+                    <h2 class="heading-content">TRAN VAN VU LUAN</h2>
+                    <p>
+                        Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="grid__col-8 a-skills">
+                    <h2 class="heading-content">skill</h2>
+                    <ul class="a-skills-list">
+                        <li class="a-skills-item">HTML</li>
+                        <li class="a-skills-item">CSS</li>
+                        <li class="a-skills-item">Javascript</li>
+                        <li class="a-skills-item">Bootstrap</li>
+                        <li class="a-skills-item">React</li>
+                    </ul>
+                </div>
+                <div class="grid__col-12 a-statistical">
+                    <ul class="a-statistical-list">
+                        <li class="a-statistical-item">
+                            <p class="a-statistical-partners">00+</p>
+                            Partners
+                        </li>
+                        <li class="a-statistical-item">
+                            <p class="a-statistical-project">02+</p>
+                            Project Done
+                        </li>
+                        <li class="a-statistical-item">
+                            <p class="a-statistical-clients">00+</p>
+                            Happy Clients
+                        </li>
+                        <li class="a-statistical-item">
+                            <p class="a-statistical-workshop">00+</p>
+                            Work Shop
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid__row" id="portfolio">
+                <h2 class="heading-content">my portfolio</h2>
+                <div class="grid__col-12 p-portfolio">
+                    <div class="p-portfolio-frame frame1">
+                        <div class="p-portfolio-item">
+                            <div class="p-portfolio-front p-active">
+                                <h3 class="p-portfolio-title">Project title</h3>
+                                <p class="p-portfolio-content">Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Quibusdam pariatur
+                                    voluptatem autem quam provident, laboriosam, error
+                                    fugit laborum ea quia quisquam aperiam recusandae!
+                                    Cupiditate, deleniti minus sunt excepturi perferendis vitae.
+                                </p>
+                                <div class="p-portfolio-footer">
+                                    <a href="#" class="p-portfolio-footer-link">link project</a>
+                                </div>
+                                <div class="p-portfolio-icon">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="p-portfolio-back">
+                                <div class="p-slides">
+                                    <img class="p-portfolio-back-img" src="resources/images/portfolio1_1.jpg" alt="">
+                                </div>
+                                <div class="p-slides">
+                                    <img class="p-portfolio-back-img" src="resources/images/portfolio1_2.jpg" alt="">
+                                </div>
+                                <div class="p-slides">
+                                    <img class="p-portfolio-back-img" src="resources/images/portfolio1_3.jpg" alt="">
+                                </div>
+                                <a class="prev change-img">&#10094;</a>
+                                <a class="next change-img">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-portfolio-frame frame2">
+                        <div class="p-portfolio-item">
+                            <div class="p-portfolio-front p-active">
+                                <h3 class="p-portfolio-title">Project title</h3>
+                                <p class="p-portfolio-content">Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Quibusdam pariatur
+                                    voluptatem autem quam provident, laboriosam, error
+                                    fugit laborum ea quia quisquam aperiam recusandae!
+                                    Cupiditate, deleniti minus sunt excepturi perferendis vitae.
+                                </p>
+                                <div class="p-portfolio-footer">
+                                    <a href="#" class="p-portfolio-footer-link">link project</a>
+                                </div>
+                                <div class="p-portfolio-icon">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="p-portfolio-back">
+                                <div class="p-slides">
+                                    <img class="p-portfolio-back-img" src="resources/images/portfolio1_1.jpg" alt="">
+                                </div>
+                                <div class="p-slides">
+                                    <img class="p-portfolio-back-img" src="resources/images/portfolio1_2.jpg" alt="">
+                                </div>
+                                <div class="p-slides">
+                                    <img class="p-portfolio-back-img" src="resources/images/portfolio1_3.jpg" alt="">
+                                </div>
+                                <a class="prev change-img">&#10094;</a>
+                                <a class="next change-img">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-portfolio-frame frame3">
+                        <div class="p-portfolio-item">
+                            <div class="p-portfolio-front p-active">
+                                <h3 class="p-portfolio-title">Project title</h3>
+                                <p class="p-portfolio-content">Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Quibusdam pariatur
+                                    voluptatem autem quam provident, laboriosam, error
+                                    fugit laborum ea quia quisquam aperiam recusandae!
+                                    Cupiditate, deleniti minus sunt excepturi perferendis vitae.
+                                </p>
+                                <div class="p-portfolio-footer">
+                                    <a href="#" class="p-portfolio-footer-link">link project</a>
+                                </div>
+                                <div class="p-portfolio-icon">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="p-portfolio-back">
+                                <div class="p-slides">
+                                    <img class="p-portfolio-back-img" src="resources/images/portfolio1_1.jpg" alt="">
+                                </div>
+                                <div class="p-slides">
+                                    <img class="p-portfolio-back-img" src="resources/images/portfolio1_2.jpg" alt="">
+                                </div>
+                                <div class="p-slides">
+                                    <img class="p-portfolio-back-img" src="resources/images/portfolio1_3.jpg" alt="">
+                                </div>
+                                <a class="prev change-img">&#10094;</a>
+                                <a class="next change-img">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__row" id="contact">
+                <div class="grid__col-12" style="color: white; height: 1000px;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dicta! Nostrum, deleniti unde sit,
+                    dolores officia ipsam architecto provident a omnis sunt placeat tempora modi quos, accusamus vel
+                    voluptas perspiciatis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dicta! Nostrum, deleniti unde sit,
+                    dolores officia ipsam architecto provident a omnis sunt placeat tempora modi quos, accusamus vel
+                    voluptas perspiciatis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dicta! Nostrum, deleniti unde sit,
+                    dolores officia ipsam architecto provident a omnis sunt placeat tempora modi quos, accusamus vel
+                    voluptas perspiciatis.
+                </div>
+            </div>
         </div>
         <footer class="footer">
 
@@ -65,4 +238,3 @@
 </body>
 
 </html>
-
