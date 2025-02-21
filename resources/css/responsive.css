@@ -70,11 +70,7 @@
     padding-top: 60px;
     width: 1200px;
     max-width: 100%;
-    margin: 0 4rem;
-}
-
-.grid__full-width {
-    width: 100%;
+    
 }
 
 .grid__row {
@@ -85,6 +81,10 @@
 
 .grid__col-2 {
     width: 16.66%;
+}
+
+.grid__col-3 {
+    width: 25%;
 }
 
 .grid__col-4 {
@@ -105,6 +105,10 @@
 
 .grid__col-8 {
     width: 66.66%;
+}
+
+.grid__col-9 {
+    width: 75%;
 }
 
 .grid__col-10 {

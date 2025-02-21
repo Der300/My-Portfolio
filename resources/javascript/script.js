@@ -74,3 +74,30 @@ document.querySelectorAll('.change-img').forEach(item =>
         
     })
 );
+
+// move label input
+document.querySelectorAll(".c-form-input").forEach(input => {
+    input.addEventListener("focus", function() {
+        this.previousElementSibling.classList.add("c-form-active");
+    });
+    input.addEventListener("blur", function() {
+        if (!this.value) {
+            this.previousElementSibling.classList.remove("c-form-active");
+        }
+    });
+});
+
+// send email to me
+document.querySelector('.c-form-btn-send').addEventListener('click', function(e) {
+    let dataForm = [];
+    document.querySelectorAll('.c-form-input').forEach(((data, index) => {
+        dataForm[index] = data.value;
+        
+    }));
+    // open email client
+    // window.location.href = `mailto:tranvanvuluantp@gmail.com?
+    // subject=${encodeURIComponent(dataForm[2])}
+    // &body=${encodeURIComponent(`Name: ${dataForm[0]}%0AEmail: ${dataForm[1]}%0A%0A${dataForm[3]}`
+    // )}`;
+    alert(`Sorry ${dataForm[0]}. This function hasn\'t complete. It will be completed in the near future`);
+});
