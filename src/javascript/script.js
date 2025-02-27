@@ -26,6 +26,15 @@ window.onclick = function (event) {
 };
 
 
+// Fetch data from json file
+// let infoUser = [];
+// fetch('resources/data/information.json')
+//     .then(res => res.json())
+//     .then(data => {
+//         infoUser = data;
+//         console.log(infoUser);
+//     });
+
 // ------------------
 // portfolio
 let projects = document.querySelectorAll('.p-portfolio-item');
@@ -43,10 +52,10 @@ projects.forEach(project => {
 })
 
 //  prevent events from overflowing through the parent
-document.querySelectorAll('.p-portfolio-footer-link').forEach(link => 
+document.querySelectorAll('.p-portfolio-footer-link').forEach(link =>
     link.addEventListener('click', function (e) {
-    e.stopPropagation();
-}));
+        e.stopPropagation();
+    }));
 
 // slide
 let imgCurrentIndex = 1;
@@ -54,16 +63,16 @@ function changeImage(n, images) {
     images.forEach(image => {
         image.style.display = 'none';
     })
-    images[n-1].style.display = 'block';
-    images[n-1].style.animation = 'FadeIn 0.5s ease-in-out forwards';
+    images[n - 1].style.display = 'block';
+    images[n - 1].style.animation = 'FadeIn 0.5s ease-in-out forwards';
 }
 
 document.querySelectorAll('.change-img').forEach(item =>
-    item.addEventListener('click', function(e) {
-        e.stopPropagation(); 
+    item.addEventListener('click', function (e) {
+        e.stopPropagation();
         // look for parent element
         prorfolioBack = e.target.closest('.p-portfolio-back');
-        images = prorfolioBack.querySelectorAll('.p-slides');  
+        images = prorfolioBack.querySelectorAll('.p-slides');
         if (e.target.classList.contains('next')) {
             if (imgCurrentIndex == images.length) imgCurrentIndex = 0;
             changeImage(++imgCurrentIndex, images);
@@ -71,16 +80,16 @@ document.querySelectorAll('.change-img').forEach(item =>
             if (imgCurrentIndex == 1) imgCurrentIndex = images.length + 1;
             changeImage(--imgCurrentIndex, images);
         }
-        
+
     })
 );
 
 // move label input
 document.querySelectorAll(".c-form-input").forEach(input => {
-    input.addEventListener("focus", function() {
+    input.addEventListener("focus", function () {
         this.previousElementSibling.classList.add("c-form-active");
     });
-    input.addEventListener("blur", function() {
+    input.addEventListener("blur", function () {
         if (!this.value) {
             this.previousElementSibling.classList.remove("c-form-active");
         }
@@ -88,11 +97,11 @@ document.querySelectorAll(".c-form-input").forEach(input => {
 });
 
 // send email to me
-document.querySelector('.c-form-btn-send').addEventListener('click', function(e) {
+document.querySelector('.c-form-btn-send').addEventListener('click', function (e) {
     let dataForm = [];
     document.querySelectorAll('.c-form-input').forEach(((data, index) => {
         dataForm[index] = data.value;
-        
+
     }));
     // open email client
     // window.location.href = `mailto:tranvanvuluantp@gmail.com?

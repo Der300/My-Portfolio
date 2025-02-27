@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "user": "TRAN VAN VU LUAN",
+        "job_position": "Web developer",
+        "image_user": "link",
+        "resume": "link",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae laborum assumenda corporis ullam unde. Dicta tenetur perferendis laudantium libero error hic, voluptatum id laborum? Reprehenderit eligendi numquam consequatur magni.",
+        "skills": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "Bootstrap",
+            "React"
+        ],
+        "statisticals": {
+            "partners": 0,
+            "project_done": 0,
+            "happy_client": 0,
+            "work_shop": 0
+        },
+        "portfolio": [
+            {
+                "project_id": 1,
+                "project_name": "portfolio1",
+                "project_description": [
+                    "HTML1",
+                    "CSS1",
+                    "Javascript1"
+                ],
+                "project_link": "link1",
+                "project_icon": "icon1",
+                "project_images": [
+                    "image11",
+                    "image12",
+                    "image13"
+                ]
+            },
+            {
+                "project_id": 2,
+                "project_name": "portfolio2",
+                "project_description": [
+                    "HTML2",
+                    "CSS2",
+                    "Javascript2"
+                ],
+                "project_link": "link2",
+                "project_icon": "icon2",
+                "project_images": [
+                    "image21",
+                    "image22",
+                    "image23"
+                ]
+            },
+            {
+                "project_id": 3,
+                "project_name": "portfolio3",
+                "project_description": [
+                    "HTML3",
+                    "CSS3",
+                    "Javascript3"
+                ],
+                "project_link": "link3",
+                "project_icon": "icon3",
+                "project_images": [
+                    "image31",
+                    "image32",
+                    "image33"
+                ]
+            }
+        ],
+        "address": "An Phu Ward, District 2, HCM city",
+        "phone_number": "+84 337 423 131",
+        "email_address": "tranvanvuluantp@gmail.com",
+        "social_link": [
+            "linkfa",
+            "linkedin",
+            "linkgithub"
+        ]
+    }
+]
