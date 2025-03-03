@@ -1,10 +1,10 @@
-/*  */
+/* css */
 .app {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 2rem;
+  margin: 2.2rem;
 }
 
 /*------start header navbar ------*/
@@ -83,7 +83,7 @@
 .h-image {
   width: 10rem;
   height: 5rem;
-  background: url('/resources/images/avatar_CV.jpg') no-repeat center/contain;
+  background: url('/src/images/avatar_CV.jpg') no-repeat center/contain;
   background-color: #fff;
   border: solid 1px var(--white-color);
   border-radius: 2px;
@@ -183,9 +183,13 @@
 }
 
 .h-info-position {
-  margin-top: 40px;
+  margin: 20px 0;
   text-transform: unset;
   font-size: 2.4rem;
+}
+
+.h-info-btn {
+  margin: 0;
 }
 
 /*------end home content app ------*/
@@ -209,11 +213,21 @@
 .a-skills-list {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 0 0 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  border: solid 1px var(--main-color);
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(1, 59, 24, 1);
+}
+
+.a-skills-main {
+ display: flex;
+ flex-direction: column;
+ /* align-items: center; */
+ margin: 12px;
 }
 
 .a-skills-item {
@@ -227,6 +241,13 @@
   border: solid 1px white;
   border-radius: 10px;
   box-shadow: 4px 4px 10px rgba(255, 255, 255, 1);
+}
+
+.a-skills-heading {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 4px 0;
 }
 
 /* statistical */
@@ -266,14 +287,14 @@
 .p-portfolio {
   margin: 10px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .p-portfolio-frame {
   background-color: var(--portfolio-frame-1-color);
-  width: 30rem;
+  min-width: 30rem;
   height: 40rem;
   margin: 12px 24px;
   position: relative;
@@ -534,17 +555,26 @@
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
+  transition: top 0.3s ease-in-out;
 }
 
-.c-form-input {
+.c-form-input,
+.c-form-textarea {
   width: 100%;
   height: 4.6rem;
+  vertical-align: middle;
   font-size: 16px;
   outline: none;
   border: none;
   border-radius: 4px;
   margin: 8px 0;
-  padding: 0;
+  padding-left: 8px;
+}
+
+.c-form-textarea {
+  height: 9.2rem;
+  resize: none;
+  overflow-y: auto;
 }
 
 .c-form-input:focus {
@@ -553,6 +583,7 @@
 
 .c-form-label.c-form-active {
   top: 8px;
+  font-size: 12px;
   background-color: var(--white-color);
   color: var(--light-color);
   border-radius: 12px;

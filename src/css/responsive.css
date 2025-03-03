@@ -1,70 +1,4 @@
 /*-----start base responsive-----*/
-@media screen and (max-width: 768px) {
-
-    /*------start header ------*/
-    .h-navbar-list {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 10rem;
-        height: 100vh;
-        background: linear-gradient(-45deg, var(--light-color), var(--main-color));
-        transform: translateX(-100%);
-        transition: 0.5s ease;
-    }
-
-    .h-navbar-item {
-        height: 5rem;
-        width: 100%;
-    }
-
-    .h-navbar-link {
-        justify-content: center;
-    }
-
-    #h-nav-caption {
-        display: block;
-    }
-
-    .h-image {
-        display: block;
-        animation: FadeIn 0.5s ease, MoveImage 1s ease;
-    }
-
-    /* .overlay::before {
-        content: '';
-        position: fixed;
-        top: 5rem;
-        left: 10rem;
-        width: 100vw;
-        height: 100%;
-        backdrop-filter: blur(0.5px);
-        background: rgba(1, 59, 24, 0.3); 
-        animation: FadeIn 0.5s ease;
-    } */
-    /*------end header ------*/
-
-    /*------start home content app ------*/
-    .h-info-name,
-    .h-info-position {
-        font-size: 2.4rem;
-    }
-
-    .h-info-position {
-        margin-top: 20px;
-        font-size: 1.6rem;
-    }
-
-
-    .a-statistical-list { 
-        flex-direction: column;
-    }
-
-    /*------end home content app ------*/
-
-}
-
-
 /* grid */
 .grid_container {
     padding-top: 60px;
@@ -120,3 +54,84 @@
 }
 
 /*-----end base responsive-----*/
+
+
+
+@media screen and (max-width: 768px) {
+
+    /*------start header ------*/
+    .h-navbar-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 100vh;
+        background: linear-gradient(-45deg, var(--light-color), var(--main-color));
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .h-navbar-item {
+        height: 5rem;
+        width: 100%;
+    }
+
+    .h-navbar-link {
+        justify-content: center;
+    }
+
+    #h-nav-caption {
+        display: block;
+    }
+
+    .h-image {
+        display: block;
+        animation: FadeIn 0.5s ease, MoveImage 1s ease;
+    }
+
+    /* .overlay::before {
+        content: '';
+        position: fixed;
+        top: 5rem;
+        left: 10rem;
+        width: 100vw;
+        height: 100%;
+        backdrop-filter: blur(0.5px);
+        background: rgba(1, 59, 24, 0.3); 
+        animation: FadeIn 0.5s ease;
+    } */
+    /*------end header ------*/
+
+    /*------start home content app ------*/
+    .h-info-name {
+        font-size: 2rem;
+    }
+
+    .h-info-position {
+        margin-top: 16px;
+        font-size: 1.6rem;
+    }
+
+    .h-info-btn {
+        font-size: 12px;
+      }
+
+    .a-statistical-list { 
+        flex-direction: column;
+    }
+
+    .p-portfolio {
+        justify-content: center;
+    }
+
+    .p-portfolio-frame {
+        margin-left: 0;
+    }
+
+    /*------end home content app ------*/
+
+    .grid__col-md-12 {
+        width: 100%;
+    }
+
+}
